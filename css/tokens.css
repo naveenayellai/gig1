@@ -1,0 +1,149 @@
+/**
+ * PeaklyyX Enterprise SaaS Design System
+ * Tokens & Variables (Dark & Light Themes)
+ */
+
+:root {
+  /* Brand Core Palette */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1; /* Main Brand Indigo */
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  --color-accent-cyan: #06b6d4;
+  --color-accent-purple: #a855f7;
+  --color-accent-emerald: #10b981;
+  --color-accent-amber: #f59e0b;
+  --color-accent-rose: #f43f5e;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Font Sizes */
+  --font-xs: 0.75rem;     /* 12px */
+  --font-sm: 0.84375rem;  /* 13.5px */
+  --font-base: 0.9375rem; /* 15px */
+  --font-md: 1.0625rem;   /* 17px */
+  --font-lg: 1.25rem;     /* 20px */
+  --font-xl: 1.5rem;      /* 24px */
+  --font-2xl: 1.875rem;   /* 30px */
+  --font-3xl: 2.25rem;    /* 36px */
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout dimensions */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 76px;
+  --header-height: 70px;
+}
+
+/* Dark Theme (Default Peaklyy Obsidian Style) */
+[data-theme="dark"], :root:not([data-theme="light"]) {
+  --bg-app: #080b11;
+  --bg-subtle: #0d121d;
+  --bg-surface: #111726;
+  --bg-surface-elevated: #161e31;
+  --bg-surface-hover: #1c263c;
+  --bg-glass: rgba(17, 23, 38, 0.75);
+
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-focus: rgba(99, 102, 241, 0.6);
+  --border-glow: rgba(99, 102, 241, 0.25);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #090d16;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.25);
+
+  --badge-brand-bg: rgba(99, 102, 241, 0.15);
+  --badge-brand-text: #a5b4fc;
+  --badge-success-bg: rgba(16, 185, 129, 0.15);
+  --badge-success-text: #34d399;
+  --badge-warning-bg: rgba(245, 158, 11, 0.15);
+  --badge-warning-text: #fbbf24;
+  --badge-danger-bg: rgba(244, 63, 94, 0.15);
+  --badge-danger-text: #fb7185;
+  --badge-info-bg: rgba(6, 182, 212, 0.15);
+  --badge-info-text: #22d3ee;
+
+  --input-bg: #0b0f19;
+  --input-border: rgba(255, 255, 255, 0.12);
+  --table-stripe: rgba(255, 255, 255, 0.015);
+  --table-hover: rgba(99, 102, 241, 0.05);
+}
+
+/* Light Theme (Crisp Porcelain Style) */
+[data-theme="light"] {
+  --bg-app: #f8fafc;
+  --bg-subtle: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --bg-surface-hover: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  --border-subtle: #f1f5f9;
+  --border-default: #e2e8f0;
+  --border-focus: rgba(99, 102, 241, 0.5);
+  --border-glow: rgba(99, 102, 241, 0.15);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-inverse: #ffffff;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.08);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
+
+  --badge-brand-bg: #eef2ff;
+  --badge-brand-text: #4f46e5;
+  --badge-success-bg: #ecfdf5;
+  --badge-success-text: #059669;
+  --badge-warning-bg: #fffbeb;
+  --badge-warning-text: #d97706;
+  --badge-danger-bg: #fff1f2;
+  --badge-danger-text: #e11d48;
+  --badge-info-bg: #ecfeff;
+  --badge-info-text: #0891b2;
+
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --table-stripe: #fafbfd;
+  --table-hover: #f1f5f9;
+}
